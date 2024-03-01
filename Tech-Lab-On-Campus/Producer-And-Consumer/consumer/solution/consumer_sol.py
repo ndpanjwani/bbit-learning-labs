@@ -6,8 +6,8 @@ import os
 import json
 
 class mqConsumer(mqConsumerInterface): 
-    
-    def __init__(self,exchange_name, queue_name, binding_key) -> None: # second variable?
+
+    def __init__(self,binding_key, exchange_name, queue_name) -> None: # second variable?
         self.exchange_name = exchange_name
         self.queue_name = queue_name
         self.binding_key = binding_key
